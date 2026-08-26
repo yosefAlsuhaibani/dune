@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787771744488,
+  "lastUpdate": 1787771753755,
   "repoUrl": "https://github.com/yosefAlsuhaibani/dune",
   "entries": {
     "Melange Benchmark": [
@@ -350318,6 +350318,35 @@ window.BENCHMARK_DATA = {
           {
             "name": "synthetic build time (cold, Linux)",
             "value": 61.83443694507333,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alizter@gmail.com",
+            "name": "Ali Caglayan",
+            "username": "Alizter"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d928cac92540c0a207fc19683b02be559d5d8e2c",
+          "message": "test: isolate expect tests from Git configuration (#16216)\n\n## Description\n\nConfigure expect tests to ignore global and system Git configuration,\nmatching the blackbox test setup. This prevents settings such as\n`commit.gpgsign=true` from leaking into temporary repositories and\nfailing inside the test sandbox.\n\n## Testing\n\n- `./dune.exe runtest test/expect-tests/dune_pkg`\n- `./dune.exe runtest test/expect-tests/vcs`\n- `./dune.exe build @check @fmt`",
+          "timestamp": "2026-08-26T13:49:32+02:00",
+          "tree_id": "078f79f38919046c3250cc91fa0beb4fd5b65ad3",
+          "url": "https://github.com/yosefAlsuhaibani/dune/commit/d928cac92540c0a207fc19683b02be559d5d8e2c"
+        },
+        "date": 1787771752636,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "synthetic build time (warm, Linux)",
+            "value": 0.58032003852,
             "unit": "seconds"
           }
         ]
