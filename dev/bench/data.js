@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787944941552,
+  "lastUpdate": 1787944950210,
   "repoUrl": "https://github.com/yosefAlsuhaibani/dune",
   "entries": {
     "Melange Benchmark": [
@@ -350376,6 +350376,35 @@ window.BENCHMARK_DATA = {
           {
             "name": "synthetic build time (cold, Linux)",
             "value": 66.29396196149332,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@rgrinberg.com",
+            "name": "Rudi Grinberg",
+            "username": "rgrinberg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12c05f86a1fa1b3fc0a1bd9cc4aa5206e8bb42af",
+          "message": "test(ctypes): record link sandbox and header dependencies (#16231)\n\nRecord that Ctypes 0.3 executable and C stubs library links consuming\n`c_library_flags` run outside a sandbox. A follow-up Ctypes version can\nadd separate link dependencies and require sandboxing without changing\n0.3 behavior.\n\nAlso record that generated helper compilation does not depend on headers\nfrom the implicit Ctypes include directory. That dependency-tracking bug\nshould be fixed for every Ctypes version.\n\nSigned-off-by: Rudi Grinberg <me@rgrinberg.com>",
+          "timestamp": "2026-08-28T17:47:11+01:00",
+          "tree_id": "699273ca1cd86d4c368f7219463bf16e5ba5295b",
+          "url": "https://github.com/yosefAlsuhaibani/dune/commit/12c05f86a1fa1b3fc0a1bd9cc4aa5206e8bb42af"
+        },
+        "date": 1787944949452,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "synthetic build time (warm, Linux)",
+            "value": 0.62294907448,
             "unit": "seconds"
           }
         ]
